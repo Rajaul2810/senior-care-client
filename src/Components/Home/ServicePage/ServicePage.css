@@ -1,0 +1,10 @@
+.img img{
+  height: 50px;
+}
+.animation{
+    transition:height, transform 2s;
+}
+.animation:hover{
+  height: 60px;
+  transform: rotate(360deg);
+}
