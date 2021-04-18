@@ -11,7 +11,7 @@ const Book = () => {
     console.log(_id , book);
 
     useEffect(()=>{
-            fetch(`http://localhost:4000/service/${_id}`)
+            fetch(`https://fathomless-journey-02312.herokuapp.com/service/${_id}`)
             .then(res =>res.json())
             .then(data =>setBook(data[0]))
     },[_id])
@@ -20,7 +20,7 @@ const Book = () => {
         const newOrder = {email:loggedInUser.email,name:loggedInUser.displayName,PaymentId:id, book:book,date:new Date()}
         console.log(newOrder);
         
-      fetch('http://localhost:4000/addBook',{
+      fetch('https://fathomless-journey-02312.herokuapp.com/addBook',{
         method:'POST',
         headers:{'content-type':'application/json'},
         body:JSON.stringify(newOrder)

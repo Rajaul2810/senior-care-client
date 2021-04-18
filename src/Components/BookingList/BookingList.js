@@ -9,7 +9,7 @@ const BookingList = () => {
       const [loggedInUser,setLoggedInUser] =useContext(UserContext);
 
         useEffect(()=>{
-            fetch('http://localhost:4000/orderBook?email='+loggedInUser.email)
+            fetch('https://fathomless-journey-02312.herokuapp.com/orderBook?email='+loggedInUser.email)
             .then(res=>res.json())
             .then(data =>setBooks(data))
         },[])

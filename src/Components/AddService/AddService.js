@@ -35,7 +35,7 @@ const AddService = () => {
 
     const handleService = (e)=>{
         const newService ={...service};
-        fetch('http://localhost:4000/addService',{
+        fetch('https://fathomless-journey-02312.herokuapp.com/addService',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(newService)

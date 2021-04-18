@@ -31,7 +31,7 @@ import ServicePage from '../ServicePage/ServicePage';
 const Services = () => {
     const [serviceData,setServiceData] = useState([]);
     useEffect(()=>{
-          fetch('http://localhost:4000/services')
+          fetch('https://fathomless-journey-02312.herokuapp.com/services')
           .then(res => res.json())
           .then(data =>setServiceData(data));
     },[])

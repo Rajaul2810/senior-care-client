@@ -3,7 +3,7 @@ import React from 'react';
 const ManagePage = ({ element }) => {
     const handleDelate= (id)=>{
         console.log("click")
-        fetch(`http://localhost:4000/delete/${id}`,{
+        fetch(`https://fathomless-journey-02312.herokuapp.com/delete/${id}`,{
             method:'DELETE'
         })
         .then(res=>res.json())

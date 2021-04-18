@@ -5,7 +5,7 @@ const ManageService = () => {
     const [data, setData] = useState([]);
     console.log(data);
     useEffect(() => {
-        fetch('http://localhost:4000/services')
+        fetch('https://fathomless-journey-02312.herokuapp.com/services')
             .then(res => res.json())
             .then(element => setData(element))
     }, [])

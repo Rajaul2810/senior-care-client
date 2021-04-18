@@ -18,7 +18,7 @@ const Admin = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     useEffect(() => {
-        fetch('http://localhost:4000/getAdmin?email=' + loggedInUser.email)
+        fetch('https://fathomless-journey-02312.herokuapp.com/getAdmin?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setAdmin(data[0]))
     }, [])

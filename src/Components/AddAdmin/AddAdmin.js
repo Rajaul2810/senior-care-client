@@ -13,7 +13,7 @@ const AddAdmin = () => {
     const handleAdmin = () =>{
         const newAdmin = {...admin};
         console.log(newAdmin);
-        fetch('http://localhost:4000/addAdmin',{
+        fetch('https://fathomless-journey-02312.herokuapp.com/addAdmin',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(newAdmin)
